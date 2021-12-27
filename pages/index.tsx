@@ -29,21 +29,23 @@ const Home: NextPage = ({ inspirationLocationsHearby }) => {
         <LargeCard />
       </div>
 
-      <main className="mx-auto">
-        <section className="sm:mx-10 -mt-20">
-          <h2 className="text-3xl lg:text-4xl mx-5 font-semibold">
-            Inspiration for your next trip
-          </h2>
-          <div className="flex snap-center  space-x-5 first-of-type:ml-5 last-of-type:mr-5 m-0 mt-10 overflow-scroll scrollbar-hide">
-            {inspirationLocationsHearby?.map((item: location) => (
-              <SmallCard
-                key={item.id}
-                locationName={item.locationName}
-                LocationDistance={item.distanceFromlocation}
-                distanceUnit={item.distanceUnit}
-                imageUrl={item.imageUrl}
-              />
-            ))}
+      <main className="mx-auto w-full">
+        <section className="-mt-20 w-full">
+          <div className="sm:mx-10">
+            <h2 className="text-3xl lg:text-4xl mx-5 font-semibold">
+              Inspiration for your next trip
+            </h2>
+            <div className="flex snap-center space-x-5 first-of-type:ml-5 last-of-type:mr-5 m-0 mt-10 overflow-scroll scrollbar-hide">
+              {inspirationLocationsHearby?.map((item: location) => (
+                <SmallCard
+                  key={item.id}
+                  locationName={item.locationName}
+                  LocationDistance={item.distanceFromlocation}
+                  distanceUnit={item.distanceUnit}
+                  imageUrl={item.imageUrl}
+                />
+              ))}
+            </div>
           </div>
         </section>
         <section className="my-28 mx-5 sm:mx-10">

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function MediumCard({ title, url, backgroundUrl, buttonText }) {
   return (
-    <div className="w-full h-[50rem] mt-10 md:h-[30rem] lg:h-[42rem] xl:h-[70rem] max-w-3xl rounded-2xl overflow-hidden">
+    <div className="w-full h-[50rem] mt-10 md:h-[30rem] lg:h-[42rem] xl:h-[48rem] max-w-3xl rounded-2xl overflow-hidden">
       <div className="relative w-full h-full">
         <Image
           src={`${backgroundUrl}`}

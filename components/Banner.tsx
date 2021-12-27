@@ -16,7 +16,7 @@ export default function Banner() {
         <p className="text-4xl  md:text-3xl lg:text-5xl text-white">
           Not sure where to go? Perfect.
         </p>
-        <button className="mt-9 bg-white md:px-5 lg:px-8 md:py-3 lg:py-4 shadow-md hover:shadow-xl rounded-full font-bold hover:scale-110 ease-in-out duration-150">
+        <button className="mt-9 bg-white px-5 lg:px-8 py-3 lg:py-4 shadow-md hover:shadow-xl rounded-full font-bold hover:scale-110 ease-in-out duration-150">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6F019C] to-[#C6017E]">
             I'm flexible
           </span>
